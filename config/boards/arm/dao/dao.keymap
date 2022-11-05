@@ -21,16 +21,16 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-// -----------------------------------------------------------------------------------------
-// |  GUI |   ~  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  [   | GUI/] |
-//        | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |CTRL/'|
-//        | LALT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RALT |
-//                           | RSE | SPC | LWR |   | LWR | BKSP | RSE |
+// -----------------------------------------------------------------------------------------------
+// |GUI SLCK|ALT ~|  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U  |  I  |  O  |  P  |RALT [| GUI ] |
+//          |SHFT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  ;  |SHFT '|
+//          |CTR \|  Z  |  X  |  C  |  V  |  B  |   |  N  |  M  |  ,  |  .  |  /  |CTRL -|
+//                            | ADJ | RSE | LWR |   | LWR | RSE | ADJ |
                         bindings = <
-   &kp LWIN &kp GRAVE &kp Q &kp W &kp E &kp R &kp T &kp Y         &kp U  &kp I     &kp O   &kp P    &kp LBKT &mt RWIN RBKT
-            &kp LCTRL &kp A &kp S &kp D &kp F &kp G &kp H         &kp J  &kp K     &kp L   &kp SEMI &mt RCTRL SQT
-            &kp LALT  &kp Z &kp X &kp C &kp V &kp B &kp N         &kp M  &kp COMMA &kp DOT &kp FSLH &mt RALT BSLH
-                         &lt RSE TAB &mt LSHFT SPACE &lt LWR RET &lt LWR ESC &mt RSHFT BSPC &lt RSE DEL
+   &mt LWIN SLCK &mt LALT GRAVE &kp Q &kp W &kp E &kp R &kp T &kp Y     &kp U  &kp I     &kp O   &kp P    &mt RALT LBKT   &mt RWIN RBKT
+                 &kp LSHFT      &kp A &kp S &kp D &kp F &kp G &kp H     &kp J  &kp K     &kp L   &kp SEMI &mt RSHFT SQT
+                 &mt LCTRL BSLH &kp Z &kp X &kp C &kp V &kp B &kp N     &kp M  &kp COMMA &kp DOT &kp FSLH &mt RCTRL MINUS
+                               &lt ADJ TAB &lt RSE RET &lt LWR SPACE   &lt LWR BSPC &lt RSE ESC &lt ADJ DEL
                         >;
                 };
                 lower_layer {
