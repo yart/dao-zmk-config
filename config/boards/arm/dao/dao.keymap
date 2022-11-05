@@ -54,7 +54,7 @@
 //          |     |BTCLR| BT0 | BT1 | BT2 | BT3 |   | ? / | 1 ! | 2 @ | 3 # | - _ |     |
 //                            |     |     |     |   |     |     |     |
                         bindings = <
-   &trans &kp K_APP  &kp LS(RG(Q)) &kp RG(W)    &kp RG(E)    &kp RG(R)    &none            &kp KP_ENTER &kp N7 &kp N8 &kp N9 &kp N0    &kp BSPC        &mt RGUI KP_NUM
+   &trans &kp K_APP  &none         &kp RG(W)    &kp RG(E)    &kp RG(R)    &none            &kp KP_ENTER &kp N7 &kp N8 &kp N9 &kp N0    &kp BSPC        &mt RGUI KP_NUM
           &trans     &none         &kp RG(S)    &kp RG(D)    &none        &none            &kp KP_COMMA &kp N4 &kp N5 &kp N6 &kp EQUAL &mt RSHFT K_DOT
           &trans     &bt BT_CLR    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3     &kp SLASH    &kp N1 &kp N2 &kp N3 &kp MINUS &trans
                                                               &trans &trans &lt ADJ RET   &lt ADJ ESC &trans &trans
