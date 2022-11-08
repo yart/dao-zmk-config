@@ -22,24 +22,62 @@
 
             kp_0 {
                 bindings = <&kp N0>;
-                key-positions = <11 23>;
+                key-positions = <7 20>;
                 layers = <0>;
             };
 
             kp_1 {
                 bindings = <&kp N1>;
-                key-positions = <5 17>;
+                key-positions = <6 19>;
                 layers = <0>;
             };
 
             kp_2 {
                 bindings = <&kp N2>;
-                key-positions = <7 19>;
+                key-positions = <8 21>;
+                layers = <0>;
             };
 
             kp_3 {
                 bindings = <&kp N3>;
-                key-positions = <4 16>;
+                key-positions = <5 18>;
+                layers = <0>;
+            };
+
+            kp_4 {
+                bindings = <&kp N4>;
+                key-positions = <9 22>;
+                layers = <0>;
+            };
+
+            kp_5 {
+                bindings = <&kp N5>;
+                key-positions = <4 17>;
+                layers = <0>;
+            };
+
+            kp_6 {
+                bindings = <&kp N6>;
+                key-positions = <10 23>;
+                layers = <0>;
+            };
+
+            kp_7 {
+                bindings = <&kp N7>;
+                key-positions = <3 16>;
+                layers = <0>;
+            };
+
+            kp_8 {
+                bindings = <&kp N8>;
+                key-positions = <11 24>;
+                layers = <0>;
+            };
+
+            kp_9 {
+                bindings = <&kp N9>;
+                key-positions = <2 15>;
+                layers = <0>;
             };
         };
 
@@ -47,11 +85,20 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-// -----------------------------------------------------------------------------------------------
+// .--------.-----.-----.-----.-----.-----.-----.   .-----.-----.-----.-----.-----.------.-------.
+// |   00   |  01 |  02 |  03 |  04 |  05 |  06 |   |  07 |  08 |  09 |  10 |  11 |  12  |   13  |
 // |GUI SLCK|ALT ~|  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U  |  I  |  O  |  P  |RALT [| GUI ] |
+// '---------------+-----+-----+-----+-----+----|   |-----+-----+-----+-----+-----+------+-------'
+//          |  14 |  15 |  16 |  17 |  18 |  19 |   |  20 |  21 |  22 |  23 |  24 |  25  |
 //          |SHFT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  ;  |SHFT '|
+//          |-----+-----+-----+-----+-----+-----|   |-----+-----+-----+-----+-----+------|
+//          |  26 |  27 |  28 |  29 |  30 |  31 |   |  32 |  33 |  34 |  35 |  36 |  37  |
 //          |CTR \|  Z  |  X  |  C  |  V  |  B  |   |  N  |  M  |  ,  |  .  |  /  |CTRL -|
+//          '-----'-----'-----+-----+-----+-----|   |-----+-----+-----+-----'-----'------'
+//                            |  38 |  39 |  40 |   |  41 |  42 |  43 |
 //                            | ADJ | RSE | LWR |   | LWR | RSE | ADJ |
+//                            '-----'-----'-----'   '-----'-----'-----'
+
                         bindings = <
    &mt LWIN SLCK &mt LALT GRAVE &kp Q &kp W &kp E &kp R &kp T &kp Y     &kp U  &kp I     &kp O   &kp P    &mt RALT LBKT   &mt RWIN RBKT
                  &kp LSHFT      &kp A &kp S &kp D &kp F &kp G &kp H     &kp J  &kp K     &kp L   &kp SEMI &mt RSHFT SQT
