@@ -22,13 +22,14 @@
 
             kp_0 {
                 bindings = <&kp N0>;
-                key-positions = <6 18>;
+                key-positions = <11 23>;
                 layers = <0>;
             };
 
             kp_1 {
                 bindings = <&kp N1>;
                 key-positions = <5 17>;
+                layers = <0>;
             };
 
             kp_2 {
