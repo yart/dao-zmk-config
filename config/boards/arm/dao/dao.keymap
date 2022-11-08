@@ -17,6 +17,31 @@
 &mt { quick_tap_ms = <200>; };
 
 / {
+        combos {
+            compatible = "zmk,combos";
+
+            kp_0 {
+                bindings = <&kp N0>;
+                key-positions = <6 18>;
+                layers = <0>;
+            };
+
+            kp_1 {
+                bindings = <&kp N1>;
+                key-positions = <5 17>;
+            };
+
+            kp_2 {
+                bindings = <&kp N2>;
+                key-positions = <7 19>;
+            };
+
+            kp_3 {
+                bindings = <&kp N3>;
+                key-positions = <4 16>;
+            };
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
