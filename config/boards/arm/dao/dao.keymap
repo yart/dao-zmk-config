@@ -17,6 +17,9 @@
 &lt { quick_tap_ms = <200>; };
 &mt { quick_tap_ms = <200>; };
 
+// euro sign
+ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
+
 / {
     behaviors {
         hm: homerow_mods {
@@ -168,10 +171,10 @@
 //          |     |     | M+X | M+C | M+V | M+6 |   | M+9 | M+0 | M+, | M+. | M+/ | M+-  |
 //                            |     |     |     |   |     |     |     |
                         bindings = <
-   &reset &bootloader &kp RC(Q) &kp RC(W) &kp RA(E) &kp RA(R) &kp RA(T)      &kp RA(Y)  &none      &kp RA(N8)    &none       &kp RA(P)    &bootloader   &reset
-          &kp CAPS    &kp RA(A) &kp RA(S) &kp RA(D) &kp RA(F) &none          &kp RA(H)  &none      &kp RA(K)     &kp RA(L)   &kp RA(SEMI) &kp RA(SQT)
-          &trans      &none     &kp RA(X) &kp RA(C) &kp RA(V) &kp RA(N6)     &kp RA(N9) &kp RA(N0) &kp RA(COMMA) &kp RA(DOT) &kp RA(FSLH) &kp RA(MINUS)
-                                                      &trans &none &trans   &trans &none &trans
+   &reset &bootloader &kp RC(Q) &kp RC(W) &euro_sign &kp RA(R) &kp RA(T)      &kp RA(Y)  &none      &kp RA(N8)    &none       &kp RA(P)    &bootloader   &reset
+          &kp CAPS    &kp RA(A) &kp RA(S) &kp RA(D)  &kp RA(F) &none          &kp RA(H)  &none      &kp RA(K)     &kp RA(L)   &kp RA(SEMI) &kp RA(SQT)
+          &trans      &none     &kp RA(X) &kp RA(C)  &kp RA(V) &kp RA(N6)     &kp RA(N9) &kp RA(N0) &kp RA(COMMA) &kp RA(DOT) &kp RA(FSLH) &kp RA(MINUS)
+                                                       &trans &none &trans   &trans &none &trans
                         >;
                 };
         };
