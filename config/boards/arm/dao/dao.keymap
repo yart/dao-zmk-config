@@ -5,7 +5,7 @@
  */
 
 #include <behaviors.dtsi>
-#include "../helper/helper.h"
+#include "../../../../../helper/helper.h"
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
