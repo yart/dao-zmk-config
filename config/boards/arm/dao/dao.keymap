@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#define HOST_OS 1
+#define HOST_OS 1 // 0 — Win, 1 — Linux, 2 — MacOS
 
 #include <behaviors.dtsi>
 #include "../../../../../helper/helper.h"
@@ -28,7 +28,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <125>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings =
