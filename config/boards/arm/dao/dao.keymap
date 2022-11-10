@@ -206,7 +206,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
 //  |            |            |            |            |            |            |            |     |            |            |            |            |            |            |            |
 //  '------------|-[14]{EQUAL}|-[15]{N9}---|-[16]{N7}---|-[17]{N5}---|-[18]{N3}---|-[19]{N1}---|     |-[20]{N2----|-[21]{N4}---|-[22]{N6}---|-[23]{N8}---|-[24]{N0}---|-[25]{MINUS}|------------'
 //               |            |  {SLCK}>   |            |            |            |            |     |            |            |            |            | <{SLCK}    |            |
-                    &kp BSLH     &mt LGUI A   &mt LSHFT S &mt LCTRL D   &mt LALT F   &kp G              &kp H        &mt RALT J  &mt RCTRL K  &mt RSHFT L &kp RGUI SEMI  &kp FSLH
+                    &kp BSLH     &mt LGUI A   &mt LSHFT S &mt LCTRL D   &mt LALT F   &kp G              &kp H        &mt RALT J  &mt RCTRL K  &mt RSHFT L &mt RGUI SEMI  &kp FSLH
 //               |            |            |            |            |            |            |     |            |            |            |            |            |            |
 //               |-[26]{F11}--|-[27]{F9}---|-[28]{F7}---|-[29]{F5}---|-[30]{F3}---|-[31]{F1}---|     |-[32]{F2----|-[33]{F4}---|-[34]{F6}---|-[35]{F8}---|-[36]{F10}--|-[37]{F12}--|
 //               |            |            |            |            |            |            |     |            |            |            |            |            |            |
@@ -268,7 +268,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
                         bindings = <
 //  .-[00]-------v-[01]-------v-[02]-------v-[03]-------v-[04]-------v-[05]-------v-[06]-------.     .-[07]-------v-[08]-------v-[09]-------v-[10]-------v-[11]-------v-[12]-------v-[13]-------.
 //  |            |            |            |            |            |            |            |     |            |            |            |            |            |            |            |
-       ___          ___           &kp SLASH   &kp KP_N7    &kp KP_N8    &kp KP_N9   &kp KP_MINUS      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &bt BT_CLR    &kp K_APP    ___
+       ___          ___          &kp SLASH    &kp KP_N7    &kp KP_N8    &kp KP_N9   &kp KP_MINUS      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &bt BT_CLR    &kp K_APP    ___
 //  |            |            |            |            |            |            |            |     |            |            |            |            |            |            |            |
 //  '------------|-[14]-------|-[15]-------|-[16]-------|-[17]-------|-[18]-------|-[19]-------|     |-[20]-------|-[21]-------|-[22]-------|-[23]-------|-[24]-------|-[25]-------|------------'
 //               |            |            |            |            |            |            |     |            |            |            |            |            |            |
