@@ -19,8 +19,8 @@
 #define _v_ &trans
 #define ___ &none
 
-&lt { quick_tap_ms = <200>; };
-&mt { quick_tap_ms = <200>; };
+&lt { quick_tap_ms = <250>; };
+&mt { quick_tap_ms = <250>; };
 
 // unicode symbols
 ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
@@ -199,14 +199,14 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
                 compatible = "zmk,keymap";
 
                 default_layer {
-                        bindings = <
+
 //  .-[00]-------v-[01]-------v-[02]-------v-[03]-------v-[04]-------v-[05]-------v-[06]-------.     .-[07]-------v-[08]-------v-[09]-------v-[10]-------v-[11]-------v-[12]-------v-[13]-------.
 //  |            |            |            |            |            |            |            |     |            |            |            |            |            |            |            |
        ___          &kp GRAVE    &kp Q        &kp W       &kp E         &kp R        &kp T              &kp Y        &kp U        &kp I        &kp O        &kp P        &kp MINUS      ___
 //  |            |            |            |            |            |            |            |     |            |            |            |            |            |            |            |
 //  '------------|-[14]{EQUAL}|-[15]{N9}---|-[16]{N7}---|-[17]{N5}---|-[18]{N3}---|-[19]{N1}---|     |-[20]{N2----|-[21]{N4}---|-[22]{N6}---|-[23]{N8}---|-[24]{N0}---|-[25]{MINUS}|------------'
 //               |            |  {SLCK}>   |            |            |            |            |     |            |            |            |            | <{SLCK}    |            |
-                    &kp BSLH     &mt LGUI A   &mt LSHFT S &mt LCTRL D   &mt LALT F   &kp G              &kp H        &mt RALT J  &mt RCTRL K  &mt RSHFT L &mt RGUI SEMI  &kp FSLH
+                    &kp BSLH     &mt LSHFT A  &mt LGUI S  &mt LCTRL D   &mt LALT F   &kp G              &kp H        &mt RALT J  &mt RCTRL K  &mt RGUI L &mt RSHFT SEMI  &kp FSLH
 //               |            |            |            |            |            |            |     |            |            |            |            |            |            |
 //               |-[26]{F11}--|-[27]{F9}---|-[28]{F7}---|-[29]{F5}---|-[30]{F3}---|-[31]{F1}---|     |-[32]{F2----|-[33]{F4}---|-[34]{F6}---|-[35]{F8}---|-[36]{F10}--|-[37]{F12}--|
 //               |            |            |            |            |            |            |     |            |            |            |            |            |            |
