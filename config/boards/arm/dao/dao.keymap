@@ -19,8 +19,8 @@
 #define _v_ &trans
 #define ___ &none
 
-&lt { quick_tap_ms = <250>; };
-&mt { quick_tap_ms = <250>; };
+&lt { quick_tap_ms = <200>; };
+&mt { quick_tap_ms = <150>; };
 
 // unicode symbols
 ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
@@ -31,8 +31,8 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
                 compatible = "zmk,behavior-hold-tap";
                 label = "HOMEROW_MODS";
                 #binding-cells = <2>;
-                tapping-term-ms = <125>;
-                quick-tap-ms = <0>;
+                tapping-term-ms = <150>;
+                quick-tap-ms = <100>;
                 flavor = "tap-preferred";
                 bindings =
                     <&kp>,
