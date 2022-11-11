@@ -206,7 +206,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
 //  |            |            |            |            |            |            |            |     |            |            |            |            |            |            |            |
 //  '------------|-[14]{F11}--|-[15]{F9}---|-[16]{F7}---|-[17]{F5}---|-[18]{F3}---|-[19]{F1}---|     |-[20]{F2}---|-[21]{F4}---|-[22]{F6}---|-[23]{F8}---|-[24]{F10}--|-[25]{F12}--|------------'
 //               |            |  {SLCK}>   |            |            |            |            |     |            |            |            |            | <{SLCK}    |            |
-                    &kp BSLH     &mt LSHFT A  &mt LGUI S  &mt LCTRL D   &mt LALT F   &kp G              &kp H        &mt RALT J  &mt RCTRL K  &mt RGUI L &mt RSHFT SEMI  &kp FSLH
+                    &kp BSLH     &hm LSHFT A  &hm LGUI S  &hm LCTRL D   &hm LALT F   &kp G              &kp H        &hm RALT J  &hm RCTRL K  &hm RGUI L &hm RSHFT SEMI  &kp FSLH
 //               |            |            |            |            |            |            |     |            |            |            |            |            |            |
 //               |-[26]{EQUAL}|-[27]{N9}---|-[28]{N7}---|-[29]{N5}---|-[30]{N3}---|-[31]{N1}---|     |-[32]{N2}---|-[33]{N4}---|-[34]{N6}---|-[35]{N8}---|-[36]{N0}---|-[37]{MINUS}|
 //               |            |            |            |            |            |            |     |            |            |            |            |            |            |
