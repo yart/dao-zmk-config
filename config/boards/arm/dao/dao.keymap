@@ -199,7 +199,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
                 compatible = "zmk,keymap";
 
                 default_layer {
-
+                        bindings = <
 //  .-[00]-------v-[01]-------v-[02]-------v-[03]-------v-[04]-------v-[05]-------v-[06]-------.     .-[07]-------v-[08]-------v-[09]-------v-[10]-------v-[11]-------v-[12]-------v-[13]-------.
 //  |            |            |            |            |            |            |            |     |            |            |            |            |            |            |            |
        ___          &kp GRAVE    &kp Q        &kp W       &kp E         &kp R        &kp T              &kp Y        &kp U        &kp I        &kp O        &kp P        &kp MINUS      ___
