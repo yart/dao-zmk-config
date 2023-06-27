@@ -17,6 +17,7 @@
 #define ADJ 3
 #define SYS 4
 
+// Switch language
 #define ENG &kp LC(LGUI)
 #define RUS &kp RC(K_APP)
 
@@ -191,12 +192,77 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
                 layers = <0>;
             };
 
+            // toggle language
             kp_scroll_lock {
                 bindings = <&kp SLCK>;
                 key-positions = <15 24>;
                 layers = <0>;
             };
-        };
+
+            // switch language
+            kp_eng {
+                bindings = <ENG>;
+                key-positions = <17 18>;
+                layers = <0>;
+            };
+
+            kp_rus {
+                bindings = <RUS>;
+                key-positions = <21 22>;
+                layers = <0>;
+            };
+
+            // from left pinky second column
+            // =+
+            kp_equal_hor {
+                bindings = <&kp EQUAL>;
+                key-positions = <2 3>;
+                layers = <0>;
+            };
+
+            // `~
+            kp_grave {
+                bindings = <&kp GRAVE>;
+                key-positions = <3 4>;
+                layers = <0>;
+            };
+
+            // \|
+            kp_back_slash {
+                bindings = <&kp BSLH>;
+                key-positions = <15 16>;
+                layers = <0>;
+            };
+
+            // [{
+            kp_left_bracket {
+                bindings = <&kp LBKT>;
+                key-positions = <27 28>;
+                layers = <0>;
+            };
+
+            // from right pinky second column
+            // -_
+            kp_minus_hor {
+                bindings = <&kp MINUS>;
+                key-positions = <10 11>;
+                layers = <0>;
+            };
+
+            // /?
+            kp_forward_slash {
+                bindings = <&kp FSLH>;
+                key-positions = <23 24>;
+                layers = <0>;
+            };
+
+            // ]}
+            kp_right_bracket {
+                bindings = <&kp RBKT>;
+                key-positions = <35 36>;
+                layers = <0>;
+            };
+};
 
 
         keymap {
@@ -205,15 +271,15 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
                 default_layer {
                         bindings = <
 //.-[00]--------v-[01]--------v-[02]--------v-[03]--------v-[04]--------v-[05]--------v-[06]--------.  .-[07]--------v-[08]--------v-[09]--------v-[10]--------v-[11]--------v-[12]--------v-[13]--------.
-//|             |             |             |             |             |             |             |  |             |             |             |             |             |             |             |
+//|             |             |           {=|+}         {`|~}           |             |             |  |             |             |             |           {-|_}           |             |             |
      ___          &kp GRAVE     &kp Q         &kp W         &kp E         &kp R         &kp T            &kp Y         &kp U         &kp I         &kp O         &kp P         &kp MINUS       ___
 //|             |          ёЁ |          йЙ |          цЦ |          уУ |          кК |          еЕ |  |          нН |          гГ |          шШ |          щЩ |          зЗ |          -- |             |
 //'-------------|-[14]{F11}---|-[15]{F9}----|-[16]{F7}----|-[17]{F5}----|-[18]{F3}----|-[19]{F1}----|  |-[20]{F2}----|-[21]{F4}----|-[22]{F6}----|-[23]{F8}----|-[24]{F10}---|-[25]{F12}---|-------------'
-//              |             |  {SLCK}>    |             |             |             |             |  |             |             |             |             | <{SLCK}     |             |
+//              |             |           {\||}           |         {ENG|ENG}         |             |  |             |         {RUS|RUS}         |           {/|?}           |             |
                   &kp BSLH      &hm LSHFT A   &hm LGUI S    &hm LCTRL D   &hm LALT F    &hm RALT G       &hm LALT H    &hm RALT J    &hm RCTRL K   &hm RGUI L   &hm RSHFT SEMI &kp FSLH
 //              |          \/ |          фФ |          ыЫ |          вВ |          аА |          пП |  |          рР |          оО |          лЛ |          дД |          жЖ |          ., |
 //              |-[26]{EQUAL}-|-[27]{N9}----|-[28]{N7}----|-[29]{N5}----|-[30]{N3}----|-[31]{N1}----|  |-[32]{N2}----|-[33]{N4}----|-[34]{N6}----|-[35]{N8}----|-[36]{N0}----|-[37]{MINUS}-|
-//              |             |             |             |             |             |             |  |             |             |             |             |             |             |
+//              |             |           {[|{}           |             |             |             |  |             |             |             |           {]|}}           |             |
                   &kp LBKT      &kp Z         &kp X         &kp C         &kp V         &kp B            &kp N         &kp M         &kp COMMA     &kp DOT       &kp SQT       &kp RBKT
 //              |          хХ |          яЯ |          чЧ |          сС |          мМ |          иИ |  |          тТ |          ьЬ |          бБ |          юЮ |          эЭ |          ъЪ |
 //              '-------------^-------------^-------------|-[38]--------|-[39]--------|-[40]--------|  |-[41]--------|-[42]--------|-[43]--------|-------------^-------------^-------------'
@@ -272,11 +338,11 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
                         bindings = <
 //.-[00]--------v-[01]--------v-[02]--------v-[03]--------v-[04]--------v-[05]--------v-[06]--------.  .-[07]--------v-[08]--------v-[09]--------v-[10]--------v-[11]--------v-[12]--------v-[13]--------.
 //|             |             |             |             |             |             |             |  |             |             |             |             |             |             |             |
-     ___          &bootloader   &kp SLASH     &kp KP_N7     &kp KP_N8     &kp KP_N9     &kp KP_MINUS     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR    &bootloader    ___
+     ___          ___           &kp SLASH     &kp KP_N7     &kp KP_N8     &kp KP_N9     &kp KP_MINUS     ___           ___           ___           ___           ___           ___            ___
 //|             |             |             |             |             |             |             |  |             |             |             |             |             |             |             |
 //'-------------|-[14]--------|-[15]--------|-[16]--------|-[17]--------|-[18]--------|-[19]--------|  |-[20]--------|-[21]--------|-[22]--------|-[23]--------|-[24]--------|-[25]--------|-------------'
 //              |             |             |             |             |             |             |  |             |             |             |             |             |             |
-                  &sys_reset  &kp KP_MULTIPLY &kp KP_N4     &kp KP_N5     &kp KP_N6     &kp KP_PLUS      ___           ___           ___           ___           ___           &sys_reset
+                  ___         &kp KP_MULTIPLY &kp KP_N4     &kp KP_N5     &kp KP_N6     &kp KP_PLUS      ___           ___           ___           ___           ___           ___
 //              |             |             |             |             |             |             |  |             |             |             |             |             |             |
 //              |-[26]--------|-[27]--------|-[28]--------|-[29]--------|-[30]--------|-[31]--------|  |-[32]--------|-[33]--------|-[34]--------|-[35]--------|-[36]--------|-[37]--------|
 //              |             |             |             |             |             |             |  |             |             |             |             |             |             |
@@ -284,7 +350,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
 //              |             |             |             |             |             |             |  |             |             |             |             |             |             |
 //              '-------------^-------------^-------------|-[38]--------|-[39]--------|-[40]--------|  |-[41]--------|-[42]--------|-[43]--------|-------------^-------------^-------------'
 //                                                        |             |             |             |  |             |             |             |
-                                                            _v_           _v_           _v_              _v_           _v_           _v_
+                                                            &mo SYS       _v_           _v_              _v_           _v_           &mo SYS
 //                                                        |             |             |             |  |             |             |             |
 //                                                        '-------------^-------------^-------------'  '-------------^-------------^-------------'
                         >;
